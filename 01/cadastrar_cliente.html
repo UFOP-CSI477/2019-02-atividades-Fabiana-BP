@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+    <title>Cadastro de Clientes</title>
+    <meta charset="utf-8">
+  
+</head>
+
+<body>
+    <h1>Cadastro do Cliente</h1>
+    <form method="POST" action="validar_cadastro_cliente.html">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Nome completo">
+        <br>
+        <br>
+
+        <label for="nasc">Data de Nascimento:</label>
+        <input type="date" name="nasc" id="nasc">
+
+
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx">
+        <br>
+        <br>
+
+        <label for="email">E-mail::</label>
+        <input type="email" name="email" id="email" placeholder="nome@email.com">
+        <br>
+        <br>
+
+        <label for="telefone">Tel:</label>
+        <input type="text" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx">
+        <br>
+        <br>
+        <br>
+        <label>Endereço</label>
+        <br>
+        <br>
+        <label for="rua">Rua:</label>
+        <input type="text" name="rua" id="rua">
+        <label for="n">Número:</label>
+        <input type="number" name="n" id="n">
+        <br>
+        <br>
+        <label for="bairro">Bairro:</label>
+        <input type="text" name="bairro" id="bairro">
+        <label for="complemento">Complemento:</label>
+        <input type="text" name="complemento" id="complemento" placeholder="casa/apartamento">
+        <br>
+        <br>
+        <label for="cep">CEP:</label>
+        <input type="text" name="cep" id="cep" placeholder="xx.xxx-xxx">
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" id="cidade">
+        <br>
+        <br>
+        <label for="estado">Estado:</label>
+        <input type="text" name="estado" id="estado">
+        <label for="pais">País:</label>
+        <input type="text" name="pais" id="pais">
+        <br>
+        <br>
+        <input type="submit" name="cadastrar" value="Cadastrar">
+        <input type="reset" name="limpar" value="Limpar">
+    </form>
+    <br>
+    <a href="principal.html">Voltar</a>
+
+</body>
+
+</html>

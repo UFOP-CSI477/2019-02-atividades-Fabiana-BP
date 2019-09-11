@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vender Produto</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <h1>OBA!!! Vamos às compras...</h1>
+    <img src="./img/vendas.png" alt="vendas">
+    <br>
+    <br>
+    <h2>Produtos</h2>
+    <form method="POST" action="verifica_estoque">
+
+        <label for="produtos">Produto: </label>
+        <select name="produtos" id="produtos">
+            <option disabled selected value="0">Selecione</option>
+            <option value="1">Notebook Dell i7 7th gen: R$3.800,00 </option>
+            <option value="2">Notebook Lenovo Intel Celeron 4GB: R$1.259,00 </option>
+            <option value="3">Smartphone S9+ Samsung: R$3.800,00 </option>
+            <option value="4">Smartphone Redmi Go Xiaome: R$359,90 </option>
+            <option value="5">Smartphone Zenfone Max Azus: R$719,10 </option>
+        </select>
+
+        <input type="submit" name="verifica_estoque" value="VERIFICAR DISPONIBILIDADE">
+    </form>
+    <br>
+    <br>
+
+    <h2>Clientes</h2>
+    <form method="POST" action="validar_venda">
+        <label for="clientes">Cliente:</label>
+        <select name="clientes" id="clientes">
+            <option disabled selected value="0">Selecione</option>
+            <option value="1">111.114.196-12: Maria Cristina dos Anjos </option>
+            <option value="2">121.115.196-12: Carlos Paulo Santos </option>
+            <option value="3">128.115.196-12: Maria do Carmo Pereira </option>
+            <option value="4">127.117.196-12: Lúcio Pereira Fernades </option>
+            <option value="5">121.175.196-14: Luciana Patrícia Almeida </option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <input type="submit" name="comprar" value="COMPRAR">
+    </form>
+    <br>
+    <br>
+    <a href="principal.html">Voltar</a>
+</body>
+
+</html>
