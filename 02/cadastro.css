@@ -1,0 +1,65 @@
+h1{
+  text-align: center;
+  font-size: 20pt;
+}
+
+div{
+  margin: 20px;
+}
+
+div.container{
+  margin-top: 50px;
+}
+
+
+div.destaque{
+  background-color: gray
+}
+
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+img.pequeno{
+  width: 10%;
+}
+
+input{
+  width:93%;
+  font-size:90%;
+  border: 1px solid purple;
+}
+
+select{
+  width:93%;
+  font-size:90%;
+  border: 1px solid purple;
+  border-radius:10px;
+}
+
+input.menor{
+  width:30%
+}
+
+input.normal{
+  width:auto;
+}
+
+input.numero{
+  width:10%;
+}
+
+
+input.metade{
+  width:45%;
+}
+input.maior{
+  width:80%;
+}
+
+input.button{
+  background-color: #e5e5f1;
+  width:auto;
+}

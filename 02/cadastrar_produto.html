@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+    <title>Cadastro de Produtos</title>
+    <meta charset="utf-8">
+    <link rel=stylesheet href="cadastro.css">
+
+</head>
+
+<body>
+  <div class="destaque">
+    <h1>Cadastro de Produto</h1>
+  </div>
+  <div>
+    <form method="POST" action="validar_cadastro_produto.html">
+      <div class="container">
+        <div>
+          <label for="nome_produto">Nome:</label>
+          <input type="text" name="nome_produto" id="nome_produto" placeholder="Nome do Produto">
+        </div>
+
+        <div>
+          <label for="descricao">Descrição:</label>
+          <input type="text" name="descricao" id="descricao" placeholder="Breve descrio do Produto">
+        </div>
+
+        <div>
+          <label for:peso>Peso:</label>
+          <input type="text" name="peso" id="peso" placeholder="Peso" class="numero">
+          <label for="unidade">Unidade de medida:</label>
+          <input type="text" name="unidade" id="unidade" placeholder="Unidade de medida" class="numero">
+        </div>
+
+        <div>
+          <label for="valor">Valor:</label>
+          <input type="text" name="valor" id="valor" placeholder="Valor (R$)" class="numero">
+        </div>
+
+        <div>
+          <label for="estoque_inicial">Estoque Inicial:</label>
+          <input type="number" name="estoque_inicial" class="numero">
+        </div>
+      </div>
+
+      <div class="container">
+        <div>
+          <label>Mercado</label>
+        </div>
+        <div>
+          <input type="radio" name="mercado" id="interno" value="MI" class="normal">
+          <label for="interno">Mercado Interno</label>
+
+          <input type="radio" name="mercado" id="externo" value="ME" class="normal">
+          <label for="externo">Mercado Externo</label>
+        </div>
+      </div>
+
+      <div class="container">
+        <div>
+          <label for="fornecedor">Fornecedor</label>
+          <select name="fornecedor" id="fornecedor">
+              <option disabled selected value="0">Selecione</option>
+              <option value="1">Fornecedor 1</option>
+              <option value="2">Fornecedor 2</option>
+              <option value="3">Fornecedor 3</option>
+              <option value="4">Fornecedor 4</option>
+              <option value="2">Fornecedor 5</option>
+          </select>
+        </div>
+        <div>
+          <input type="submit" name="cadastrar" value="Cadastrar" class="button">
+          <input type="reset" name="limpar" value="Limpar" class="button">
+        </div>
+      </div>
+    </form>
+  </div>
+    <div class="container">
+      <a href="principal.html">Voltar</a>
+    </div>
+
+</body>
+
+</html>

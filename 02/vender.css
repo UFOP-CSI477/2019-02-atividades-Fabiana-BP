@@ -1,0 +1,30 @@
+div{
+  margin:50px;
+  text-align: center;
+}
+
+div.container{
+  margin:50px;
+  text-align: center;
+  border: 1px solid gray;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+
+select{
+  width:90%;
+  font-size:90%;
+  border: 1px solid purple;
+  border-radius:10px;
+}
+
+input.button{
+  background-color: #e5e5f1;
+  width:auto;
+}
+
+h2{
+  font-size: 14pt;
+}

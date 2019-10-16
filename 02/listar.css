@@ -1,0 +1,39 @@
+table{
+      width: 100%;
+      border:2px solid blueviolet;
+      border-collapse: collapse;
+    }
+thead,tfoot{
+            width: 100%;
+            border:2px solid blueviolet;
+            border-collapse: collapse;
+            background-color: #e5e5f1;
+          }
+
+td,th{
+    border-collapse: collapse;
+    border:1px solid rebeccapurple;
+  }
+
+tr:hover{
+  background-color: #d6f2e1;
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+h1{
+  text-align: center;
+  font-size: 20pt;
+}
+
+div{
+  margin:20px;
+}
+
+div.destaque{
+  background-color: gray;
+}
