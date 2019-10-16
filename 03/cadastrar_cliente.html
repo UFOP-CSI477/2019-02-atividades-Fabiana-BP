@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+    <title>Cadastro de Clientes</title>
+    <link rel=stylesheet href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,srink-to-fit=no">
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Cadastro do Cliente</h1>
+    </div>
+
+
+      <form method="POST" action="validar_cadastro_cliente.html" >
+        <div class="container form-group">
+          <div>
+            <label>Dados Pessoais</label>
+          </div>
+
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome completo" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="nasc">Data de Nascimento:</label>
+            <input type="date" name="nasc" id="nasc" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="nome@email.com" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Tel:</label>
+            <input type="text" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" class="form-control">
+          </div>
+        </div>
+
+
+        <div class="container form-group">
+          <div>
+            <label>Endereço</label>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-9">
+                <label for="rua">Rua:</label>
+                <input type="text" name="rua" id="rua" class="form-control">
+              </div>
+              <div class="col-3">
+                <label for="n">Número:</label>
+                <input type="number" name="n" id="n" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="bairro" id="bairro" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-3">
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" id="cep" placeholder="xx.xxx-xxx" class="form-control">
+              </div>
+              <div class="col-9">
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col">
+                <label for="estado">Estado:</label>
+                <input type="text" name="estado" id="estado" class="form-control">
+              </div>
+              <div class="col">
+                <label for="pais">País:</label>
+                <input type="text" name="pais" id="pais" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="custom-control custom-switch">
+          <input type="submit" name="cadastrar" value="Cadastrar" class="btn btn-secondary">
+          <input type="reset" name="limpar" value="Limpar" class="btn btn-secondary">
+          <a href="principal.html" class="btn btn-secondary">Voltar</a>
+        </div>
+
+      </form>
+
+
+  </div>
+</body>
+
+</html>
