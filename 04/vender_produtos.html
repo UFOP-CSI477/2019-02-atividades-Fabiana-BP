@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vender Produto</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <script src="script_vender.js"></script>
+</head>
+
+<body>
+    <div class="container">
+      <div class="form-group text-xl-center">
+        <h1>OBA!!! Vamos às compras...</h1>
+      </div>
+      <div class="form-group text-xl-center">
+        <img src="./img/vendas.png" alt="vendas" class="w-50 img-thumbnail">
+      </div>
+
+
+      <div class="container">
+        <div class="form-group">
+          <h2>Produtos</h2>
+        </div>
+        <form id="dados1" method="POST" action="verifica_estoque">
+          <label id="label1" for="produtos">Produto: </label>
+
+            <div class="input-group mb-3">
+              <select name="produtos" id="produtos" class="form-control custom-select">
+                <option disabled selected value="0">Selecione</option>
+                <option value="1">Notebook Dell i7 7th gen: R$3.800,00 </option>
+                <option value="2">Notebook Lenovo Intel Celeron 4GB: R$1.259,00 </option>
+                <option value="3">Smartphone S9+ Samsung: R$3.800,00 </option>
+                <option value="4">Smartphone Redmi Go Xiaome: R$359,90 </option>
+                <option value="5">Smartphone Zenfone Max Azus: R$719,10 </option>
+              </select>
+
+              <div class="input-group-append">
+                <input type="button" name="verifica_estoque" value="Verificar disponibilidade" class="btn btn-secondary" onclick="disponibilidade()">
+              </div>
+            </div>
+
+        </form>
+    </div>
+
+
+    <div class="container">
+      <div class="form-group">
+        <h2>Clientes</h2>
+      </div>
+      <form id="dados2" method="POST" action="validar_venda">
+          <div class="form-group">
+            <label for="clientes">Cliente:</label>
+            <select name="clientes" id="clientes" class="custom-select">
+                <option disabled selected value="0">Selecione</option>
+                <option value="1">111.114.196-12: Maria Cristina dos Anjos </option>
+                <option value="2">121.115.196-12: Carlos Paulo Santos </option>
+                <option value="3">128.115.196-12: Maria do Carmo Pereira </option>
+                <option value="4">127.117.196-12: Lúcio Pereira Fernades </option>
+                <option value="5">121.175.196-14: Luciana Patrícia Almeida </option>
+            </select>
+          </div>
+        <div class="custom-control custom-switch">
+          <input type="button" id="comprar" name="comprar" value="Comprar" class="btn btn-secondary" disabled=true onclick="efetua_venda()">
+          <a href="principal.html" class="btn btn-secondary">Voltar</a>
+        </div>
+      </form>
+    </div>
+
+</body>
+
+</html>
