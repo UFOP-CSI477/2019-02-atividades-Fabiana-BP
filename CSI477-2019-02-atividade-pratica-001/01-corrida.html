@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Apuração de Resultados - Carrinhos de Rolimã</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <script src="01-corrida-javascript.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron bg-info">
+        <h1>Apuração de resultados: Corrida de carrinhos de rolimã</h1>
+      </div>
+      <div class="form-group">
+        <form name="entrada">
+          <div class="row">
+            <div class="col-6">
+              <label id="label1" for="nome">Nome do competidor:</label>
+              <input type="text" id="nome" name="nome" class="form-control">
+            </div>
+            <div class="col-3">
+              <label id="label2" for="tempo">Tempo de prova (em segundos):</label>
+              <input type="number" id="tempo" name="tempo" class="form-control">
+            </div>
+
+            <div class="col-3">
+              <input type="button" name="inserir" id="inserir" value="Inserir"
+              class="btn btn-secondary btn-lg custom-control p-3" onclick="inserirCompetidor()">
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+      <div id="d" class="form-group" style="display:none">
+        <table id="tdados" class="table table-bordered">
+          <caption>Relação dos competidores</caption>
+          <thead >
+            <tr>
+              <th>Largada</th>
+              <th>Competidor(a)</th>
+              <th>Tempo (s)</th>
+            </tr>
+          </thead>
+        </table>
+
+        <input id="finalizar" class="btn btn-secondary custom-control btn-lg" type="button" value="Finalizar" onclick="insereResultado()">
+
+      </div>
+
+      <div id="res" style="display:none" class="form-group">
+        <h2>Resultado:</h2>
+        <table id="tresult" class="table table-bordered">
+          <caption>Resultado da prova</caption>
+          <thead >
+            <tr>
+              <th>Posição</th>
+              <th>Largada</th>
+              <th>Competidor(a)</th>
+              <th>Tempo (s)</th>
+              <th>Resultado</th>
+            </tr>
+          </thead>
+        </table>
+        <div>
+          <input type="button" value="Nova Rodada"
+          class="btn btn-secondary btn-lg custom-control p-3" onclick="recarregaPagina()">
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

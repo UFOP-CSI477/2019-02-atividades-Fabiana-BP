@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width:device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="04-didatica-css.css">
+    <script src="04-didatica-javascript.js"></script>
+    <title>Atividade didática para as crianças</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron bg-info">
+        <div class="row">
+          <div class="col-4">
+            <img src="./04-didatica-img/criancas.jpeg" alt="crianças">
+          </div>
+          <div class="col">
+            <h1 class="text-warning">Oba! Atividades para as crianças...</h1>
+            <h2>Aprender pode ser divertido!</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <h3 class="text-sm-center">Atividades</h3>
+      </div>
+
+      <!--atividade 1-->
+
+
+      <div class="row text-sm-center">
+        <audio id='playAudio1'>
+          <source src="./04-didatica-audios/exercicio1.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse formato de áudio.
+        </audio>
+        <div class="col-1">
+          <input type=image src="./04-didatica-img/autofalante.jpeg" class="buttonImagem" onclick="darPlay(1)">
+        </div>
+        <div class="col p-3">
+          <h4 class="bg-info">Selecione a palavra que não pertence a cada um dos grupos.</h4>
+        </div>
+      </div>
+      <div class="form-group border">
+        <div class="form-group pt-xl-5">
+          <div class="row">
+            <audio id='playAudio2'>
+              <source src="./04-didatica-audios/grupo1.mp3" type="audio/mpeg">
+                Seu navegador não suporta esse formato de áudio.
+            </audio>
+            <div class="col-1">
+              <input type=image src="./04-didatica-img/autofalante.jpeg" class="buttonImagem" onclick="darPlay(2)">
+            </div>
+            <div class="col p-3">
+              <h4>a) Grupo 1:</h4>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <input id="11a" type=image src="./04-didatica-img/arroz.jpeg" class="buttonImagem" onclick="verifica(1,1)">
+              <input id="11b" class="btn btn-link" type="button" value="arroz" onclick="verifica(1,1)">
+            </div>
+            <div class="col">
+              <input id="12a" type=image src="./04-didatica-img/sabonete.jpeg" class="buttonImagem" onclick="verifica(1,2)">
+              <input id="12b" class="btn btn-link" type="button" value="sabonete" onclick="verifica(1,2)">
+            </div>
+            <div class="col">
+              <input id="13a" type=image src="./04-didatica-img/feijao.jpeg" class="buttonImagem" onclick="verifica(1,3)">
+              <input id="13b" class="btn btn-link" type="button" value="feijão" onclick="verifica(1,3)">
+            </div>
+            <div class="col">
+              <input id="14a" type=image src="./04-didatica-img/batata.jpeg" class="buttonImagem" onclick="verifica(1,4)">
+              <input id="14b"class="btn btn-link" type="button" value="batata" onclick="verifica(1,4)">
+            </div>
+          </div>
+          <input id="b1" class="btn btn-info" type="button" value="Tente novamente" style="display:none" onclick="novamente(1)">
+
+
+          <div id="alerta1" class="alert alert-success" style="display:none">
+            <input type="image" class="figura" src="./04-didatica-img/feliz.jpeg" alt="certo" onclick="certa()">
+            <span class="p-3">Parabéns você acertou!</span>
+          </div>
+          <div id="alerta2" class="alert alert-danger" style="display:none">
+            <input type="image" class="figura" src="./04-didatica-img/errado.png" alt="errado" onclick="errada()">
+            <span class="p-3">Não foi dessa vez. Você errou! Tente novamente. </span>
+          </div>
+        </div>
+
+        <div class="form-group pt-xl-5">
+
+          <div class="row">
+            <audio id='playAudio3'>
+              <source src="./04-didatica-audios/grupo2.mp3" type="audio/mpeg">
+                Seu navegador não suporta esse formato de áudio.
+            </audio>
+            <div class="col-1">
+              <input type=image src="./04-didatica-img/autofalante.jpeg" class="buttonImagem" onclick="darPlay(3)">
+            </div>
+            <div class="col p-3">
+              <h4>b) Grupo 2:</h4>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <input id="21a" type=image src="./04-didatica-img/bicicleta.jpeg" class="buttonImagem" onclick="verifica(2,1)">
+              <input id="21b" class="btn btn-link" type="button" value="bicicleta" onclick="verifica(2,1)">
+            </div>
+            <div class="col">
+              <input id="22a" type=image src="./04-didatica-img/fusca.jpeg" class="buttonImagem" onclick="verifica(2,2)">
+              <input id="22b" class="btn btn-link" type="button" value="carro" onclick="verifica(2,2)">
+            </div>
+            <div class="col">
+              <input id="23a" type=image src="./04-didatica-img/algodao_doce.jpeg" class="buttonImagem" onclick="verifica(2,3)">
+              <input id="23b" class="btn btn-link" type="button" value="algodão doce" onclick="verifica(2,3)">
+            </div>
+            <div class="col">
+              <input id="24a" type=image src="./04-didatica-img/moto.jpeg" class="buttonImagem" onclick="verifica(2,4)">
+              <input id="24b" class="btn btn-link" type="button" value="moto" onclick="verifica(2,4)">
+            </div>
+          </div>
+        </div>
+
+        <input id="b2" class="btn btn-info" type="button" value="Tente novamente" style="display:none" onclick="novamente(2)">
+
+
+        <div id="alerta3" class="alert alert-success" style="display:none">
+          <input type="image" class="figura" src="./04-didatica-img/feliz.jpeg" alt="certo" onclick="certa()">
+          <span class="p-3">Parabéns você acertou!</span>
+        </div>
+        <div id="alerta4" class="alert alert-danger" style="display:none">
+          <input type="image" class="figura" src="./04-didatica-img/errado.png" alt="errado" onclick="errada()">
+          <span class="p-3">Não foi dessa vez. Você errou! Tente novamente. </span>
+        </div>
+
+
+        <div class="form-group pt-xl-5">
+
+          <div class="row">
+            <audio id='playAudio4'>
+              <source src="./04-didatica-audios/grupo3.mp3" type="audio/mpeg">
+                Seu navegador não suporta esse formato de áudio.
+            </audio>
+            <div class="col-1">
+              <input type=image src="./04-didatica-img/autofalante.jpeg" class="buttonImagem" onclick="darPlay(4)">
+            </div>
+            <div class="col p-3">
+              <h4>c) Grupo 3:</h4>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <input id="31a" type=image src="./04-didatica-img/oculos.jpeg" class="buttonImagem" onclick="verifica(3,1)">
+              <input id="31b" class="btn btn-link" type="button" value="oculos" onclick="verifica(3,1)">
+            </div>
+            <div class="col">
+              <input id="32a" type=image src="./04-didatica-img/cadeira_praia.jpeg" class="buttonImagem" onclick="verifica(3,2)">
+              <input id="32b" class="btn btn-link" type="button" value="cadeira de praia" onclick="verifica(3,2)">
+            </div>
+            <div class="col">
+              <input id="33a" type=image src="./04-didatica-img/sombrinha.jpeg" class="buttonImagem" onclick="verifica(3,3)">
+              <input id="33b" class="btn btn-link" type="button" value="sombrinha" onclick="verifica(3,3)">
+            </div>
+            <div class="col">
+              <input id="34a" type=image src="./04-didatica-img/maquina_lavar.jpeg" class="buttonImagem" onclick="verifica(3,4)">
+              <input id="34b" class="btn btn-link" type="button" value="máquina de lavar" onclick="verifica(3,4)">
+            </div>
+          </div>
+        </div>
+
+        <input id="b3" class="btn btn-info" type="button" value="Tente novamente" style="display:none" onclick="novamente(3)">
+
+
+        <div id="alerta5" class="alert alert-success" style="display:none">
+          <input type="image" class="figura" src="./04-didatica-img/feliz.jpeg" alt="certo" onclick="certa()">
+          <span class="p-3">Parabéns você acertou!</span>
+        </div>
+        <div id="alerta6" class="alert alert-danger" style="display:none">
+          <input type="image" class="figura" src="./04-didatica-img/errado.png" alt="errado" onclick="errada()">
+          <span class="p-3">Não foi dessa vez. Você errou! Tente novamente. </span>
+        </div>
+
+        <div class="form-group pt-xl-5">
+
+          <div class="row">
+            <audio id='playAudio5'>
+              <source src="./04-didatica-audios/grupo4.mp3" type="audio/mpeg">
+                Seu navegador não suporta esse formato de áudio.
+            </audio>
+            <div class="col-1">
+              <input type=image src="./04-didatica-img/autofalante.jpeg" class="buttonImagem" onclick="darPlay(5)">
+            </div>
+            <div class="col p-3">
+              <h4>d) Grupo 4:</h4>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <input id="41a" type=image src="./04-didatica-img/bola.jpeg" class="buttonImagem" onclick="verifica(4,1)">
+              <input id="41b" class="btn btn-link" type="button" value="bola" onclick="verifica(4,1)">
+            </div>
+            <div class="col">
+              <input id="42a" type=image src="./04-didatica-img/skate.jpeg" class="buttonImagem" onclick="verifica(4,2)">
+              <input id="42b" class="btn btn-link" type="button" value="skate" onclick="verifica(4,2)">
+            </div>
+            <div class="col">
+              <input id="43a" type=image src="./04-didatica-img/patins.jpeg" class="buttonImagem" onclick="verifica(4,3)">
+              <input id="43b" class="btn btn-link" type="button" value="patins" onclick="verifica(4,3)">
+            </div>
+            <div class="col">
+              <input id="44a"type=image src="./04-didatica-img/chave_fenda.jpeg" class="buttonImagem" onclick="verifica(4,4)">
+              <input id="44b" class="btn btn-link" type="button" value="chave de fenda" onclick="verifica(4,4)">
+            </div>
+          </div>
+        </div>
+
+        <input id="b4" class="btn btn-info" type="button" value="Tente novamente" style="display:none" onclick="novamente(4)">
+
+
+        <div id="alerta7" class="alert alert-success" style="display:none">
+          <input type="image" class="figura" src="./04-didatica-img/feliz.jpeg" alt="certo" onclick="certa()">
+          <span class="p-3">Parabéns você acertou!</span>
+        </div>
+        <div id="alerta8" class="alert alert-danger" style="display:none">
+          <input type="image" class="figura" src="./04-didatica-img/errado.png" alt="errado" onclick="errada()">
+          <span class="p-3">Não foi dessa vez. Você errou! Tente novamente. </span>
+        </div>
+
+        <audio id='playAudio6'>
+          <source src="./04-didatica-audios/resposta_certa.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse formato de áudio.
+        </audio>
+        <audio id='playAudio7'>
+          <source src="./04-didatica-audios/resposta_errada.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse formato de áudio.
+        </audio>
+      </div>
+
+      <!--atividade 2-->
+
+
+      <div class="row text-sm-center">
+        <audio id='playAudio8'>
+          <source src="./04-didatica-audios/exercicio2.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse formato de áudio.
+        </audio>
+        <div class="col-1">
+          <input type=image src="./04-didatica-img/autofalante.jpeg" class="buttonImagem" onclick="darPlay(8)">
+        </div>
+        <div class="col p-3">
+          <audio id='playAudio9'>
+            <source src="./04-didatica-audios/exercicio2a.mp3" type="audio/mpeg">
+              Seu navegador não suporta esse formato de áudio.
+          </audio>
+          <h4 class="bg-info">Relacione o nome com a figura geométrica.</h4>
+          <div class="row">
+            <div class="col-1">
+              <input type=image src="./04-didatica-img/autofalante.jpeg" class="buttonImagem" onclick="darPlay(9)">
+            </div>
+            <div class="col p-3">
+              <h5>Para relacionar: clique primeiro no nome e, em seguida, na figura.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group border">
+        <div class="row p-5">
+          <div class="col-6">
+              <input id="t" class="btn btn-link" type="button" value="Triângulo" onclick="triangulo()">
+          </div>
+          <div class="col-6">
+            <audio id='playAudio10'>
+              <source src="./04-didatica-audios/exercicio2fig1a.mp3" type="audio/mpeg">
+                Seu navegador não suporta esse formato de áudio.
+            </audio>
+            <audio id='playAudio11'>
+              <source src="./04-didatica-audios/exercicio2fig1b.mp3" type="audio/mpeg">
+                Seu navegador não suporta esse formato de áudio.
+            </audio>
+            <input type="image" id="i1" class="buttonImagem" src="./04-didatica-img/quadrado.png" onClick="selecao(1)">
+            <input type="text" class="align-top" id="a1" value="" disabled style="display:none">
+            <input type="text" class="align-top" id="r1" value="Quadrado" disabled style="display:none">
+            <input type="image" id="s1certo" class="figura" src="./04-didatica-img/feliz.jpeg" onClick="darPlay(10)" style="display:none">
+            <input type="image" id="s1errado" class="figura" src="./04-didatica-img/errado.png" onClick="darPlay(11)" style="display:none">
+          </div>
+        </div>
+
+        <div class="row p-5">
+          <div class="col">
+            <input id="q" class="btn btn-link" type="button" value="Quadrado" onclick="quadrado()">
+          </div>
+          <div class="col">
+            <audio id='playAudio12'>
+              <source src="./04-didatica-audios/exercicio2fig2a.mp3" type="audio/mpeg">
+                Seu navegador não suporta esse formato de áudio.
+            </audio>
+            <audio id='playAudio13'>
+              <source src="./04-didatica-audios/exercicio2fig2b.mp3" type="audio/mpeg">
+                Seu navegador não suporta esse formato de áudio.
+            </audio>
+            <input type="image" id="i2" class="buttonImagem" src="./04-didatica-img/circulo.jpeg" onClick="selecao(2)">
+            <input type="text" class="align-top" id="a2" value="" disabled style="display:none">
+            <input type="text" class="align-top" id="r2" value="Círculo" disabled style="display:none">
+            <input type="image" id="s2certo" class="figura" src="./04-didatica-img/feliz.jpeg" onClick="darPlay(12)" style="display:none">
+            <input type="image" id="s2errado" class="figura" src="./04-didatica-img/errado.png" onClick="darPlay(13)" style="display:none">
+          </div>
+        </div>
+
+        <div class="row p-5">
+          <div class="col">
+            <input id="c" class="btn btn-link" type="button" value="Círculo" onclick="circulo()">
+          </div>
+          <div class="col">
+            <audio id='playAudio14'>
+              <source src="./04-didatica-audios/exercicio2fig3a.mp3" type="audio/mpeg">
+                Seu navegador não suporta esse formato de áudio.
+            </audio>
+            <audio id='playAudio15'>
+              <source src="./04-didatica-audios/exercicio2fig3b.mp3" type="audio/mpeg">
+                Seu navegador não suporta esse formato de áudio.
+            </audio>
+            <input type="image" id="i3" class="figuraRet" src="./04-didatica-img/retangulo.png" onClick="selecao(3)">
+            <input type="text" class="align-top" id="a3" value="" disabled style="display:none">
+            <input type="text" class="align-top" id="r3" value="Retângulo" disabled style="display:none">
+            <input type="image" id="s3certo" class="figura" src="./04-didatica-img/feliz.jpeg" onClick="darPlay(14)" style="display:none">
+            <input type="image" id="s3errado" class="figura" src="./04-didatica-img/errado.png" onClick="darPlay(15)" style="display:none">
+          </div>
+      </div>
+
+      <div class="row p-5">
+        <div class="col">
+          <input id="r" class="btn btn-link" type="button" value="Retângulo" onclick="retangulo()">
+        </div>
+        <div class="col">
+          <audio id='playAudio16'>
+            <source src="./04-didatica-audios/exercicio2fig4a.mp3" type="audio/mpeg">
+              Seu navegador não suporta esse formato de áudio.
+          </audio>
+          <audio id='playAudio17'>
+            <source src="./04-didatica-audios/exercicio2fig4b.mp3" type="audio/mpeg">
+              Seu navegador não suporta esse formato de áudio.
+          </audio>
+          <input type="image" id="i4" class="buttonImagem" src="./04-didatica-img/triangulo.jpeg" onClick="selecao(4)">
+          <input type="text" class="align-top" id="a4" value="" disabled style="display:none">
+          <input type="text" class="align-top" id="r4" value="Triângulo" disabled style="display:none">
+          <input type="image" id="s4certo" class="figura" src="./04-didatica-img/feliz.jpeg" onClick="darPlay(16)" style="display:none">
+          <input type="image" id="s4errado" class="figura" src="./04-didatica-img/errado.png" onClick="darPlay(17)" style="display:none">
+        </div>
+      </div>
+
+      <div custom-control custom-swich>
+        <input type="button" class="btn btn-info" value="Tentar novamente" onclick="limpar()">
+        <input type="button" class="btn btn-info" value="Conferir resposta" onclick="verificaRelacao()">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

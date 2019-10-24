@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Cálculo Magnitude Ritcher</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="03-escala-css.css">
+    <script src="03-escala-javascript.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron bg-info text-sm-center">
+        <h1>Magnitude Ritcher</h1>
+      </div>
+      <form>
+        <div class="form-group">
+          <div class="row">
+            <div class="col">
+              <label id="label1" for="amplitude">Amplitude (medida com um sismógrafo):</label>
+              <input type="text" name="amplitude" id="amplitude" placeholder="Medida em milimetros. Ex: 23" class="form-control">
+            </div>
+            <div class="col">
+              <label id="label2" for="tempo">Intervalo de tempo:</label>
+              <input type="text" name="tempo" id="tempo" placeholder="Medida em segundos. Ex: 24" class="form-control">
+            </div>
+            <div class="col">
+              <input id="calc" type="button" value="Calcular" class="custom-control btn btn-secondary btn-lg p-3" onClick="calculo()">
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-4">
+            <label id="label2" for="resultado">Magnitude:</label>
+            <input type="text" name="resultado" id="resultado" value="" class="form-control" disabled>
+          </div>
+        </div>
+        <h2 class="text-sm-center">Efeitos observados</h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <caption>Escala Richter e Efeitos</caption>
+            <tr>
+              <th>Magnitude Ritcher</th>
+              <th>Efeitos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id=0>
+              <td>Menor que 3.5</td>
+              <td>Geralmente não sentido, mas gravado.</td>
+            </tr>
+            <tr id=1>
+              <td>Entre 3.5 e 5.4</td>
+              <td>Às vezes sentido, mas raramente causa danos.</td>
+            </tr>
+            <tr id=2>
+              <td>Entre 5.5 e 6.0</td>
+              <td>No máximo causa pequenos danos a prédios bem construídos, mas
+              pode danificar seriamente casas mal construídas em regiões próximas.</td>
+            </tr>
+            <tr id=3>
+              <td>Entre 6.1 e 6.9</td>
+              <td>Pode ser destrutivo em áreas em torno de até 100 km do epicentro.</td>
+            </tr>
+            <tr id=4>
+              <td>Entre 7.0 e 7.9</td>
+              <td>Grande terremoto. Pode causar sérios danos numa grande faixa.</td>
+            </tr>
+            <tr id=5>
+              <td>8.0 ou mais</td>
+              <td>Enorme terremoto. Pode causar graves danos em muitas áreas mesmo
+              que estejam a centenas de quilômetros.</td>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
+          <div class="form-group">
+            <input id="novo" type="button" value="Novo cálculo" class="custom-control btn btn-secondary" onClick="limpar()" style="display:none">
+          </div>
+        </div>
+        <svg class="medida"><g class="transforme"></g></svg>
+      </div>
+
+    </body>
+</html>

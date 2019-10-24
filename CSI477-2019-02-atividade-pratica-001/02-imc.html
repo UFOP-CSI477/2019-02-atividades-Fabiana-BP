@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Índice de Massa Corporal</title>
+    <link rel=stylesheet href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <script src="02-imc-javascript.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron bg-info">
+        <h1>Cálculo de Índice Corporal</h1>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <div class="row">
+            <div class="col">
+              <label id="label1" for="peso">Peso:</label>
+              <input type="text" id="peso" name="peso" value="" class="form-control" placeholder="Peso em kg (ex: 80)">
+            </div>
+            <div class="col">
+              <label id="label2" for="altura">Altura:</label>
+              <input type="text" id="altura" name="altura" value="" class="form-control" placeholder="Altura em metros (ex: 1.7)">
+            </div>
+            <div class="col">
+              <input type="button" value="Calcular" class="custom-control btn btn-secondary btn-lg p-3" onClick="calculoIMC()">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div id="imc" class="form-group">
+                <label for="resultado">IMC:</label>
+                <input type="text" id="resultado" name="resultado" class="form-control" value="" disabled>
+              </div>
+            </div>
+            <div class="col-4">
+              <div id="clas" class="form-group">
+                <label for="classificacao">Classificação:</label>
+                <input type="text" id="classificacao" name="classificacao" class="form-control" value="" disabled>
+              </div>
+            </div>
+            <div class="col-4">
+              <div id="int" class="form-group">
+                <label for="intervalo">Intervalo de peso ideal:</label>
+                <input type="text" id="intervalo" name="intervalo" class="form-control" value="" disabled>
+              </div>
+            </div>
+          </div>
+
+          <input type="button" value="Limpar" onclick="limpar()" class="btn btn-secondary">
+      </form>
+    </div>
+  </body>
+</html>
