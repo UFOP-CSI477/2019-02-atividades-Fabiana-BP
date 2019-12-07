@@ -1,0 +1,15 @@
+@extends('view_base')
+@section('navegacao')
+  @include('nav_inicial')
+@endsection
+@section('conteudo')
+  @if($nav==1)
+    @include('visualizar_protocolos')
+  @endif
+  @if($nav==2)
+    @include('cadastro_usuario')
+  @endif
+  @if($nav==3)
+    @include('login')
+  @endif
+@endsection
